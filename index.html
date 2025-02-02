@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect - Find Local Skilled Workers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>JobConnect</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#find-jobs">Find Jobs</a>
+            <a href="#post-job">Post Job</a>
+            <a href="#register" class="btn-register">Register</a>
+            <a href="#login" class="btn-login">Login</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connect with Local Jobs & Skilled Workers</h1>
+            <p>Find the right job or hire skilled workers in your area</p>
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-briefcase"></i>
+                    <input type="text" placeholder="Skill or Job Title" class="search-input">
+                </div>
+                <div class="search-input-wrapper">
+                    <i class="fas fa-location-dot"></i>
+                    <input type="text" placeholder="Location" class="search-input">
+                </div>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Forms -->
+    <section class="registration-section" id="register">
+        <div class="form-container jobseeker-form">
+            <h2>Register as Job Seeker</h2>
+            <form id="jobseekerForm">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" required placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <select id="skillSector" required>
+                        <option value="">Select Skill Sector</option>
+                        <option value="construction">Construction</option>
+                        <option value="electrical">Electrical</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="carpentry">Carpentry</option>
+                        <option value="painting">Painting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="location" required placeholder="Your Location">
+                </div>
+                <div class="form-group">
+                    <textarea id="experience" placeholder="Brief description of your experience"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results-section" id="search-results">
+        <!-- Results will be dynamically added here -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About JobConnect</h3>
+                <p>Connecting local talent with opportunities</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#find-jobs">Find Jobs</a></li>
+                    <li><a href="#post-job">Post Job</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: contact@jobconnect.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
